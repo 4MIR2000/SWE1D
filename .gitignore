@@ -1,0 +1,13 @@
+# Eclipse files/folders
+.cproject
+.project
+.pydevproject
+.settings
+
+# Scons database
+.sconsign.dblite
+
+.vscode
+
+*.vtr
+*.vtp 

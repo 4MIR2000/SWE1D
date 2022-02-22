@@ -1,0 +1,105 @@
+\hypertarget{classsolver_1_1FWave}{}\doxysection{solver\+::FWave\texorpdfstring{$<$}{<} T \texorpdfstring{$>$}{>} Class Template Reference}
+\label{classsolver_1_1FWave}\index{solver::FWave$<$ T $>$@{solver::FWave$<$ T $>$}}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_ac4afe876835f21b4737cfb6ca8e3aaa6}\label{classsolver_1_1FWave_ac4afe876835f21b4737cfb6ca8e3aaa6}} 
+enum \mbox{\hyperlink{classsolver_1_1FWave_ac4afe876835f21b4737cfb6ca8e3aaa6}{Cell\+State}} \{ {\bfseries Dry}
+, {\bfseries Wet}
+, {\bfseries Wet\+Dry}
+, {\bfseries Dry\+Wet}
+ \}
+\begin{DoxyCompactList}\small\item\em This enum stores the state of the cells\+: Dry\+: both cells are dry Wet\+: both cells are wet Wet\+Dry\+: left cell is wet and the right one is dry Dry\+Wet\+: right cell is dry and the right one is wet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classsolver_1_1FWave_aa58fc7b6b7493625024fcbe87f12facb}{determine\+State}} (\mbox{\hyperlink{classsolver_1_1FWave_ac4afe876835f21b4737cfb6ca8e3aaa6}{Cell\+State}} \&state)
+\begin{DoxyCompactList}\small\item\em This function examines the current state according to the water heights if the water height is below the tolerance the cell is considered to be dry. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classsolver_1_1FWave_a0442e5409eb9edd8b744bbc1f295e149}{compute\+Net\+Updates}} (const T \&i\+\_\+hl, const T \&i\+\_\+hr, const T \&i\+\_\+hul, const T \&i\+\_\+hur, const T \&i\+\_\+bl, const T \&i\+\_\+br, T \&o\+\_\+h\+UpdateL, T \&o\+\_\+h\+UpdateR, T \&o\+\_\+hu\+UpdateL, T \&o\+\_\+hu\+UpdateR, T \&o\+\_\+max\+Wave\+Speed)
+\begin{DoxyCompactList}\small\item\em This function computes the netupdates (A-\/deltaQ, A+deltaQ) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_a929557aa11dc2ef08c9e6e970cbea635}\label{classsolver_1_1FWave_a929557aa11dc2ef08c9e6e970cbea635}} 
+T {\bfseries hl}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_adf77294ce58a0d9549b5bce0b81f769b}\label{classsolver_1_1FWave_adf77294ce58a0d9549b5bce0b81f769b}} 
+T {\bfseries hr}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_ac19760a81c87b2b02999a9e710365433}\label{classsolver_1_1FWave_ac19760a81c87b2b02999a9e710365433}} 
+T {\bfseries hul}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_a59f8745ad02b9daf9e725dbaacc10e4a}\label{classsolver_1_1FWave_a59f8745ad02b9daf9e725dbaacc10e4a}} 
+T {\bfseries hur}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_aa4c4bde114080da365c744cad03b3585}\label{classsolver_1_1FWave_aa4c4bde114080da365c744cad03b3585}} 
+T {\bfseries bl}
+\item 
+\mbox{\Hypertarget{classsolver_1_1FWave_a403ad3e2f88092d9729f24861a1f7ba5}\label{classsolver_1_1FWave_a403ad3e2f88092d9729f24861a1f7ba5}} 
+T {\bfseries br}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classsolver_1_1FWave_a0442e5409eb9edd8b744bbc1f295e149}\label{classsolver_1_1FWave_a0442e5409eb9edd8b744bbc1f295e149}} 
+\index{solver::FWave$<$ T $>$@{solver::FWave$<$ T $>$}!computeNetUpdates@{computeNetUpdates}}
+\index{computeNetUpdates@{computeNetUpdates}!solver::FWave$<$ T $>$@{solver::FWave$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{computeNetUpdates()}{computeNetUpdates()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsolver_1_1FWave}{solver\+::\+FWave}}$<$ T $>$\+::compute\+Net\+Updates (\begin{DoxyParamCaption}\item[{const T \&}]{i\+\_\+hl,  }\item[{const T \&}]{i\+\_\+hr,  }\item[{const T \&}]{i\+\_\+hul,  }\item[{const T \&}]{i\+\_\+hur,  }\item[{const T \&}]{i\+\_\+bl,  }\item[{const T \&}]{i\+\_\+br,  }\item[{T \&}]{o\+\_\+h\+UpdateL,  }\item[{T \&}]{o\+\_\+h\+UpdateR,  }\item[{T \&}]{o\+\_\+hu\+UpdateL,  }\item[{T \&}]{o\+\_\+hu\+UpdateR,  }\item[{T \&}]{o\+\_\+max\+Wave\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function computes the netupdates (A-\/deltaQ, A+deltaQ) 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & (type parameter could be double for example) \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em i\+\_\+hl} & water height of the left cell \\
+\hline
+{\em i\+\_\+hr} & water height of the right cell \\
+\hline
+{\em i\+\_\+hul} & momentum of the left cell \\
+\hline
+{\em i\+\_\+hur} & momentum of the right cell \\
+\hline
+{\em i\+\_\+bl} & bathymetry of the left cell \\
+\hline
+{\em i\+\_\+br} & bathymetry of the right cell \\
+\hline
+{\em o\+\_\+h\+UpdateL} & output\+: left-\/going update of h \\
+\hline
+{\em o\+\_\+h\+UpdateR} & output\+: right-\/going update of h \\
+\hline
+{\em o\+\_\+hu\+UpdateL} & output\+: left-\/going update of hu \\
+\hline
+{\em o\+\_\+hu\+UpdateR} & output\+: right-\/going update of hu \\
+\hline
+{\em o\+\_\+max\+Wave\+Speed} & output\+: wavespeed(eigenvalue) with the biggest absolute value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classsolver_1_1FWave_aa58fc7b6b7493625024fcbe87f12facb}\label{classsolver_1_1FWave_aa58fc7b6b7493625024fcbe87f12facb}} 
+\index{solver::FWave$<$ T $>$@{solver::FWave$<$ T $>$}!determineState@{determineState}}
+\index{determineState@{determineState}!solver::FWave$<$ T $>$@{solver::FWave$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{determineState()}{determineState()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classsolver_1_1FWave}{solver\+::\+FWave}}$<$ T $>$\+::determine\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classsolver_1_1FWave_ac4afe876835f21b4737cfb6ca8e3aaa6}{Cell\+State}} \&}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+This function examines the current state according to the water heights if the water height is below the tolerance the cell is considered to be dry. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & This is the output \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+fwave\+Solver.\+hpp\end{DoxyCompactItemize}
